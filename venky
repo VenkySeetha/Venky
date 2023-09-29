@@ -1,8 +1,9 @@
 pipeline{
     agent any
     stages{
-        stage(Github Checkout{
-            step()
+        stage("Github Checkout"){
+            step{
+            }
         }
     }
 }

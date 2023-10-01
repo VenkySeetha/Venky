@@ -10,5 +10,10 @@ pipeline {
                 echo 'Hello world'
             }
         }
+    stage('Example Build') {
+            steps {
+                sh 'mvn -B clean verify'
+            }
+        }
     }
 }

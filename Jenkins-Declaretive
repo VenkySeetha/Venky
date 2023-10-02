@@ -11,7 +11,12 @@ pipeline{
             steps{
                 echo 'Welcome To Maven'
             }
-       }
+        }
+        stage('deploy'){
+            steps{
+                echo 'Deploy'
+            }
+        }
     }
 }
 

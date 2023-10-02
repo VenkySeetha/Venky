@@ -1,14 +1,13 @@
-pipeline {
+pipeline{
     agent any
-    options {
-        // Timeout counter starts AFTER agent is allocated
-        timeout(time: 1, unit: 'SECONDS')
-    }
-    stages {
-        stage('Example') {
+    
+    stages{
+        stage('checkout'){
             steps {
-                echo 'Hello world'
+                git branch: 'main', url: 'https://github.com/VenkySeetha/Venky.git'
             }
         }
+        
     }
+}
 }
